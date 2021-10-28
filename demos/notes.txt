@@ -1,0 +1,11 @@
+https://code.woboq.org/linux/linux/arch/x86/include/asm/ptrace.h.html: line 56 to 89 struct pt_regs
+
+uprobe:
+args.arg1 = ctx->ax;
+args.arg2 = ctx->bx;
+args.arg3 = ctx->cx;
+args.arg4 = ctx->di;
+args.arg5 = ctx->si;
+
+uretprobe:
+data.ret = ctx->ax;
